@@ -2,12 +2,13 @@
  * @see https://prettier.io/docs/en/configuration.html
  * @type {import("eslint").ESLint.ConfigData}
  */
-module.exports = {
+export default reactConfig = {
   extends: [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
+    "plugin:react/recommended"
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {

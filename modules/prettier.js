@@ -2,7 +2,7 @@
  * @see https://prettier.io/docs/en/configuration.html
  * @type {import("prettier").Config}
  */
-export default {
+module.exports = {
   printWidth: 120,
   tabWidth: 2,
   singleQuote: true,
@@ -13,5 +13,5 @@ export default {
   endOfLine: "auto",
   bracketSpacing: true,
   bracketSameLine: false,
-  plugins: ['prettier-plugin-tailwindcss']
-}
+  plugins: ["prettier-plugin-tailwindcss"],
+};

@@ -2,7 +2,7 @@
  * @see https://prettier.io/docs/en/configuration.html
  * @type {import("eslint").ESLint.ConfigData}
  */
-export default nextConfig = {
+module.exports = {
   extends: [
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",

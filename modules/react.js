@@ -2,7 +2,7 @@
  * @see https://prettier.io/docs/en/configuration.html
  * @type {import("eslint").ESLint.ConfigData}
  */
-export default reactConfig = {
+module.exports = {
   extends: [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",

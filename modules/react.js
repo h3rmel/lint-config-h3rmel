@@ -2,7 +2,7 @@
  * @see https://prettier.io/docs/en/configuration.html
  * @type {import("eslint").ESLint.ConfigData}
  */
-const eslintReactConfig = {
+module.exports = {
   extends: [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
@@ -102,5 +102,3 @@ const eslintReactConfig = {
     "pnpm-lock.yaml",
   ],
 };
-
-export default eslintReactConfig;

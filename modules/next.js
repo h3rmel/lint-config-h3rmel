@@ -2,7 +2,7 @@
  * @see https://prettier.io/docs/en/configuration.html
  * @type {import("eslint").ESLint.ConfigData}
  */
-const eslintNextConfig = {
+module.exports = {
   extends: [
    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended", 
@@ -110,5 +110,3 @@ const eslintNextConfig = {
     "pnpm-lock.yaml",
   ],
 }
-
-export default eslintNextConfig;

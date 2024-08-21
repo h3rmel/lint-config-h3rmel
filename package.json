@@ -2,9 +2,12 @@
   "name": "@h3/eslint-config",
   "version": "1.0.0",
   "description": "Isaac 'H3rmel' Reginato ESLint + Prettier configuration for React and Next.JS projects.",
-  "private": "false",
   "main": "main.js",
   "author": "Isaac 'H3rmel' Reginato",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/h3rmel/eslint-config-h3"
+  },
   "license": "MIT",
   "peerDependencies": {
     "eslint": "^8.0.0",

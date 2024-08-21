@@ -23,7 +23,7 @@ npm install --save-dev @h3/eslint-config
 
 E adicione-a no arquivo do seu ESLint:
 
-```json
+```js
 // .eslintrc.json
 {
   "extends": "@h3/eslint-config/modules/react"
@@ -40,7 +40,7 @@ npm install --save-dev @h3/eslint-config
 
 E adicione-a no arquivo do seu ESLint:
 
-```json
+```js
 // .eslintrc.json
 {
   "extends": "@h3/eslint-config/modules/next",

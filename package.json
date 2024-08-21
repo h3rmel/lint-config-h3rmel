@@ -1,5 +1,5 @@
 {
-  "name": "@h3/eslint-config",
+  "name": "@h3rmel/eslint-config",
   "version": "1.0.0",
   "description": "Isaac 'H3rmel' Reginato ESLint + Prettier configuration for React and Next.JS projects.",
   "main": "main.js",

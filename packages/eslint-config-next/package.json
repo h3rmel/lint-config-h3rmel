@@ -1,0 +1,18 @@
+{
+  "name": "@h3rmel/eslint-config-next",
+  "version": "1.0.0",
+  "main": "./eslint-config.js",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "8.2.0",
+    "@typescript-eslint/parser": "8.2.0",
+    "eslint": "8.57.0",
+    "eslint-plugin-import-helpers": "1.3.1",
+    "eslint-plugin-jsx-a11y": "6.9.0"
+  },
+  "scripts": {
+    "publish-manual": "npm publish"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

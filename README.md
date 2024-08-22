@@ -1,71 +1,74 @@
-# H3rmel ESLint + Prettier Config
+# H3rmel ESLint and Prettier Config
 
-Configuração pronta para ESLint + Prettier criada para uso em meus projetos pessoais.
+Ready setup for ESLint and Prettier for my personal projects.
 
-## O que está incluído?
+## What's included?
 
-Configuração pronta para ESLint contendo os seguintes plugins:
+Ready ESLint config for React projects, including:
 
 - React
 - React Hooks
 - Import Helpers
 - JSX a11y
 
-Configuração pronta para Prettier contendo os seguintes plugins:\
+Ready ESLint config por Next projects, including:
+
+- Import Helpers
+- JSX a11y
+
+Ready prettier config for projects, including:
 
 - Prettier TailwindCSS
 
 ## Setup
 
-Como instalar e utilizar a configuração pré-pronta:
+### Next
+
+Install the package:
+
+```bash
+npm i --save-dev @h3rmel/eslint-config-next
+```
+
+Extends the configuration:
+
+```js
+// .eslintrc.js
+module.exports = {
+  extends: ["@h3rmel/eslint-config-next"],
+};
+```
 
 ### React
 
-Instale a configuração:
+Install the package:
 
 ```bash
-npm install --save-dev @h3rmel/lint-config
+npm i --save-dev @h3rmel/eslint-config-react
 ```
 
-E adicione-a no arquivo do seu ESLint:
+Extends the configuration:
 
 ```js
-// .eslintrc.json
-{
-  "extends": "@h3rmel/lint-config/modules/react"
-}
-```
-
-### NextJS
-
-Instale a configuração:
-
-```bash
-npm install --save-dev @h3rmel/lint-config
-```
-
-E adicione-a no arquivo do seu ESLint:
-
-```js
-// .eslintrc.json
-// .eslintrc.json
-{
-  "extends": "@h3rmel/lint-config/modules/next",
-  "next/core-web-vitals",
-  "next"
-}
+// .eslintrc.js
+module.exports = {
+  extends: ["@h3rmel/eslint-config-react"],
+};
 ```
 
 ### Prettier
 
-Instale a configuração:
+Install the package:
 
 ```bash
-npm install --save-dev @h3rmel/lint-config
+npm i --save-dev @h3rmel/prettier-config
 ```
 
-E adicione-a no arquivo do seu Prettier:
+Extends the configuration:
 
-```rc
-@h3rmel/lint-config/modules/prettier
+```js
+// .eslintrc.js
+module.exports = {
+  extends: ["@h3rmel/prettier-config"],
+};
 ```

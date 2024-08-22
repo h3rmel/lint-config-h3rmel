@@ -1,25 +1,18 @@
 /**
- * @see https://prettier.io/docs/en/configuration.html
+ * @see https://eslint.org/docs/latest/use/configure/
  * @type {import("eslint").ESLint.ConfigData}
  */
 module.exports = {
-  extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-  ],
-  parser: '@typescript-eslint/parser',
+  extends: ["plugin:@typescript-eslint/recommended"],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
-  plugins: [
-    'jsx-a11y',
-    '@typescript-eslint',
-    "import-helpers"
-  ],
+  plugins: ["jsx-a11y", "@typescript-eslint", "import-helpers"],
   rules: {
     /**
      * Default rules
@@ -27,26 +20,6 @@ module.exports = {
      */
     "spaced-comment": "warn",
     "no-console": "warn",
-    /**
-     * Prettier
-     * @see https://prettier.io/docs/en/configuration.html
-     */
-    "prettier/prettier": [
-      "error",
-      {
-        printWidth: 120,
-        tabWidth: 2,
-        singleQuote: true,
-        jsxSingleQuote: false,
-        trailingComma: "all",
-        arrowParens: "always",
-        semi: true,
-        endOfLine: "auto",
-        bracketSpacing: true,
-        bracketSameLine: false,
-        plugins: ['prettier-plugin-tailwindcss']
-      },
-    ],
     /**
      * React
      * @see https://github.com/jsx-eslint/eslint-plugin-react#readme
@@ -93,10 +66,10 @@ module.exports = {
   },
   settings: {
     react: {
-      version: 'detect',
+      version: "detect",
     },
-    'import/parsers': {
-      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
+    "import/parsers": {
+      [require.resolve("@typescript-eslint/parser")]: [".ts", ".tsx", ".d.ts"],
     },
   },
   ignorePatterns: [
@@ -109,4 +82,4 @@ module.exports = {
     "yarn.lock",
     "pnpm-lock.yaml",
   ],
-}
+};

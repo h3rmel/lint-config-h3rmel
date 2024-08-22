@@ -1,5 +1,5 @@
 /**
- * @see https://prettier.io/docs/en/configuration.html
+ * @see https://eslint.org/docs/latest/use/configure/
  * @type {import("eslint").ESLint.ConfigData}
  */
 module.exports = {
@@ -7,8 +7,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -26,26 +25,6 @@ module.exports = {
      */
     "spaced-comment": "warn",
     "no-console": "warn",
-    /**
-     * Prettier
-     * @see https://prettier.io/docs/en/configuration.html
-     */
-    "prettier/prettier": [
-      "error",
-      {
-        printWidth: 120,
-        tabWidth: 2,
-        singleQuote: true,
-        jsxSingleQuote: false,
-        trailingComma: "all",
-        arrowParens: "always",
-        semi: true,
-        endOfLine: "auto",
-        bracketSpacing: true,
-        bracketSameLine: false,
-        plugins: ['prettier-plugin-tailwindcss']
-      },
-    ],
     /**
      * React
      * @see https://github.com/jsx-eslint/eslint-plugin-react#readme

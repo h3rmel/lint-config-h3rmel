@@ -4,10 +4,16 @@ Configuração pronta para ESLint + Prettier criada para uso em meus projetos pe
 
 ## O que está incluído?
 
-A configuração contempla os seguintes pontos:
+Configuração pronta para ESLint contendo os seguintes plugins:
 
-- Plugins: React, React Hooks, Import Helpers, Prettier e JSX a11y;
-- Configuração base destes mesmos plugins
+- React
+- React Hooks
+- Import Helpers
+- JSX a11y
+
+Configuração pronta para Prettier contendo os seguintes plugins:\
+
+- Prettier TailwindCSS
 
 ## Setup
 
@@ -18,7 +24,7 @@ Como instalar e utilizar a configuração pré-pronta:
 Instale a configuração:
 
 ```bash
-npm install --save-dev @h3/eslint-config
+npm install --save-dev @h3rmel/lint-config
 ```
 
 E adicione-a no arquivo do seu ESLint:
@@ -26,7 +32,7 @@ E adicione-a no arquivo do seu ESLint:
 ```js
 // .eslintrc.json
 {
-  "extends": "@h3/eslint-config/modules/react"
+  "extends": "@h3rmel/lint-config/modules/react"
 }
 ```
 
@@ -35,16 +41,31 @@ E adicione-a no arquivo do seu ESLint:
 Instale a configuração:
 
 ```bash
-npm install --save-dev @h3/eslint-config
+npm install --save-dev @h3rmel/lint-config
 ```
 
 E adicione-a no arquivo do seu ESLint:
 
 ```js
 // .eslintrc.json
+// .eslintrc.json
 {
-  "extends": "@h3/eslint-config/modules/next",
+  "extends": "@h3rmel/lint-config/modules/next",
   "next/core-web-vitals",
   "next"
 }
+```
+
+### Prettier
+
+Instale a configuração:
+
+```bash
+npm install --save-dev @h3rmel/lint-config
+```
+
+E adicione-a no arquivo do seu Prettier:
+
+```rc
+@h3rmel/lint-config/modules/prettier
 ```

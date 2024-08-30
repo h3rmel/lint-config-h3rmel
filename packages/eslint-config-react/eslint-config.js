@@ -70,6 +70,11 @@ module.exports = {
     "jsx-a11y/role-has-required-aria-props": "warn",
     "jsx-a11y/role-supports-aria-props": "warn",
   },
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
   ignorePatterns: [
     "node_modules",
     "dist",

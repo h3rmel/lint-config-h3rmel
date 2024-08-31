@@ -10,13 +10,17 @@ Install the package:
 npm i --save-dev @h3rmel/eslint-config-next
 ```
 
+Install the dependencies:
+
+```bash
+npm i --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-import-helpers eslint-plugin-jsx-a11y eslint
+```
+
 Extends the configuration:
 
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: ["@h3rmel/eslint-config-next"],
+  extends: ["next/core-web-vitals", "next", "@h3rmel/eslint-config-next"],
 };
 ```
-
-And enjoy it!

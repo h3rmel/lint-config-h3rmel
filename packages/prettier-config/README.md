@@ -10,13 +10,15 @@ Install the package:
 npm i --save-dev @h3rmel/prettier-config
 ```
 
+Install the dependencies:
+
+```bash
+npm i --save-dev prettier prettier-plugin-tailwindcss
+```
+
 Extends the configuration:
 
 ```js
-// .eslintrc.js
-module.exports = {
-  extends: ["@h3rmel/prettier-config"],
-};
+// .prettierrc
+"@h3rmel/prettier-config";
 ```
-
-And enjoy it!
